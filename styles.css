@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+header {
+    background: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: auto;
+    padding: 0 15px;
+}
+
+.logo{
+    grid-column: 1;
+}
+.logo h1{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.menu {
+    grid-column: 2;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.menu a{
+    color: white;
+    font-size: 15px;
+}
+
+.hero {
+    background: linear-gradient(rgba(27, 27, 27, 0.534), rgba(27, 27, 27, 0.534)),url('hero.jpg') no-repeat center center/cover;
+    color: rgb(255, 255, 255);
+    padding: 140px 20px;
+    margin-top: 50px;
+}
+.hero h1{
+    font-size: 40px;
+    text-decoration: underline rgb(255, 82, 82) 3px;
+}
+
+.btn {
+    background: rgb(255, 73, 73);
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(253, 39, 39);
+}
+
+.core-values {
+    padding: 10px;
+}
+
+.core-values h2 {
+    border-top: solid rgb(255, 82, 82);
+    padding-top: 20px;
+    font-size: 30px;
+    text-decoration: underline rgb(255, 82, 82);
+}
+.values-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.value-box {
+    margin: 20px;
+    border: 2px solid rgb(255, 82, 82);
+    border-radius: 10px;
+    width: 25%;
+    transition: transform  0.5s ease;
+}
+
+.value-box:hover {
+    transform: scale(1.05);
+}
+
+.value-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.goal {
+    padding: 10px;
+}
+
+.goal h2 {
+    border-top: solid rgb(255, 82, 82);
+    padding-top: 20px;
+    font-size: 30px;
+    text-decoration: underline rgb(255, 82, 82);
+}
+.goal-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.goal-box {
+    margin: 20px;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.goal-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background: #333;
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.contactinfo {
+    color: white;
+    align-items: center;
+}
+
+.links {
+    color: white;
+    align-items: center;
+}
+.links a {
+    color: white;
+}
+
+@media (max-width: 950px) {
+    nav {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-area: auto;
+        padding: 0 10px;
+    }
+    
+    .logo{
+        grid-column: 1;
+    }
+    .logo h1{
+        font-size: 16px;
+        color: white;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    
+    .menu {
+        grid-column: 2;
+        align-items: center;
+        display: flex;
+        gap: 4px;
+    }
+    .menu a{
+        color: white;
+        font-size: 15px;
+    }
+    
+    .hero {
+        background: linear-gradient(rgba(27, 27, 27, 0.534), rgba(27, 27, 27, 0.534)),url('hero.jpg') no-repeat center center/cover;
+        color: rgb(255, 255, 255);
+        padding: 100px 20px;
+        margin-top: 50px;
+    }
+    .hero h1{
+        font-size: 40px;
+        text-decoration: underline rgb(255, 82, 82) 3px;
+    }
+
+    .core-values {
+        padding: 10px;
+    }
+    
+    .core-values h2 {
+        border-top: solid rgb(255, 82, 82);
+        padding-top: 20px;
+        font-size: 30px;
+        text-decoration: underline rgb(255, 82, 82);
+    }
+    .values-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .value-box {
+        margin: 20px;
+        border: 2px solid rgb(255, 82, 82);
+        border-radius: 10px;
+        width: 200px;
+    }
+    .value-box:hover {
+        transform: scale(1.05);
+    }
+    
+    .value-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    footer {
+        background: #333;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+    
+    .contactinfo {
+        color: white;
+        align-items: center;
+    }
+    
+    .links {
+        margin-top: 10px;
+        color: white;
+        align-items: center;
+    }
+    .links a {
+        color: white;
+    }
+}
